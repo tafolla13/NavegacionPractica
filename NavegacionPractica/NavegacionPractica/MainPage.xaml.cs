@@ -18,9 +18,9 @@ namespace NavegacionPractica
             InitializeComponent();
         }
 
-        private void siguiente_Clicked(object sender, EventArgs e)
+        protected async void siguiente_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Segunda());
         }
     }
 }
